@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    /* border: border-box; border-box ensure karta hai ke element ki width/height fixed rahe — padding aur border add karne se size nahi badhta. */
+    /* border: 2px solid transparent; */
+    box-sizing: border-box;
+}
+.navbar{
+    height: 68px;
+    background-color: #003d32;/* #FF6600; */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 120px;
+}
+.logo{
+    background-image: url(amazon.png);
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+.border {
+    border: 1.5px solid transparent; /* default transparent border */
+    border-radius: 2px;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.add-first{
+    color: #D4D4D4;
+    font-size: 12px;
+    margin-left: 20px;
+    padding-bottom: 3px;
+}
+.add-second{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+    font: 0.5rem;
+}
+
+.nav-search{
+    display: flex;
+    background-color: pink;
+    width: 740px;
+    height: 42px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.search-select{
+    background-color: #E6E6E6;
+    width: 60px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    color: #767676;
+}
+.search-select:hover{
+    background-color: #D4D4D4;
+    color: #000000;
+}
+.search-input{
+    width: 100%;
+    font-size: 1.0rem;
+    border: none;
+    padding-left: 8px;
+}
+.search-icon{
+    background-color: #A91765;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:4 rem;
+    color: #ffffff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+}
+.nav-search:hover{
+    border: 2.5px solid rgb(56, 55, 55);
+}
+
+.lang-box{
+    margin: 0px 1px;
+    padding: 20px 6px 5px 7px;
+    width: 70px;
+    height: 55px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.flag{
+    width: 32px;
+    height: 25px;
+    margin: 0px 10px 1px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flag-txt{
+    width: 20px;
+    height: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 5px; */
+}
+.symbol{
+    background-color: #003d32;
+    border: none;
+    color: #E6E6E6;
+    margin: 6px 0px 0px 0px;
+}
+
+span{
+    font-size: 12px;
+}
+.nav-second{
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.nav-cart{
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-cart i{
+    font-size: 20px;
+}
+
+/*Panel*/
+.panel{
+    height: 40px;
+    background-color: #085849;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+}
+.panel-all{
+    font-weight: 600;
+}
+.panel-ops p{
+    display: inline-block;
+    margin-left: 15px;
+    padding: 8px 10px;
+}
+.panel-ops{
+    width: 80%;
+    font-size: 13px;
+    font-weight: 530;
+}
+.panel-deals{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.hero-section{
+    background-image: url("hero_image02.jpg");
+    height:300px;
+    background-size: cover;
+}
+
+
+.shop-section{
+    display: grid;
+    background-color: #e3e6e6;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px; /* Rows ke beech sirf 10px fasla rakho */
+    column-gap: 20px; /* Columns ke beech 20px fasla hi rakho */
+    /* height: auto; */
+    width: auto;
+    border: none;
+}
+/*Box1 styling */
+.box1{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+    /* margin-bottom: 0px; */
+}
+.box1 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box1-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Yeh line CSS ko bataati hai ke tumhare Grid Container ke andar columns (khade hisse) kaise banenge. */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.box1 a{
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+.box1-image-item{
+    width: 100%;
+    height: auto;
+}
+.box1-image-item img {
+    width: 100%; 
+    height: 130px; 
+    object-fit: cover; /* Agar image stretch ho rahi hai toh use cover kare */
+}
+.box1-image-item p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*Box2 styling */
+.box2{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box2 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box2-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.box2 a{
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+.box2-image-item{
+    width: 100%;
+    height: auto;
+}
+.box2-image-item img {
+    width: 100%; 
+    height: 130px; 
+    object-fit: cover; /
+}
+.box2-image-item p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*Box3 styling */
+.box3{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box3 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box3-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.box3 a{
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+.box3-image-item{
+    width: 100%;
+    height: auto;
+}
+.box3-image-item img {
+    width: 100%; 
+    height: 130px; 
+    object-fit: cover; 
+}
+.box3-image-item p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*Box4 styling */
+.box4{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box4 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box4-image{
+    height: 300px;
+    margin-bottom: 30px;
+}
+.box4-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box4 a{
+    text-decoration: none;
+    display: block;
+    padding-top: 5px;
+    /* padding-bottom: 15px; */
+    margin-top: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+/*Box5 styling */
+.box5{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box5 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box5-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.box5 a{
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+.box5-image-item{
+    width: 100%;
+    height: auto;
+}
+.box5-image-item img {
+    width: 100%; 
+    height: 130px; 
+    object-fit: cover; 
+}
+.box5-image-item p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+/*Box6 styling */
+.box6{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box6 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box6-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.box6 a{
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+.box6-image-item{
+    width: 100%;
+    height: auto;
+}
+.box6-image-item img {
+    width: 100%; 
+    height: 130px; 
+    object-fit: cover; 
+}
+.box6-image-item p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+/*Box7 styling */
+.box7{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box7 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box7-image{
+    height: 300px;
+    margin-bottom: 30px;
+}
+.box7-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box7 a{
+    text-decoration: none;
+    display: block;
+    padding-top: 5px;
+    /* padding-bottom: 15px; */
+    margin-top: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+/*Box8 styling */
+.box8{
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 20px;
+}
+.box8 h2{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.box8-image{
+    height: 300px;
+    margin-bottom: 30px;
+}
+.box8-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box8 a{
+    text-decoration: none;
+    display: block;
+    padding-top: 5px;
+    /* padding-bottom: 15px; */
+    margin-top: 10px;
+    font-size: 13px;
+    color: #2162A1;
+}
+
+/*Top picks section styling */
+.back-of-top{
+    display: grid;
+    background-color: #e3e6e6;
+    background-size: cover;
+    height: 285px;
+    /* width: auto; */
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    margin-top: 0;
+    padding: 10px 20px;
+}
+.top-picks{
+    height: 290px;
+    width: 100%;
+    padding: 10px 20px;
+    padding-bottom: 0;
+    border: none;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.top-head{
+    font-size: 22px;
+    color: #051111;
+    margin: 10px 0px 0px;
+}
+.top-picks-items{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 20px 0px;
+    /* margin:0;   */
+}
+.box-images{
+    background-color: #FFFFFF;
+    padding-top: 15px;
+    padding-right: 5px;
+    margin-right: 10px;
+    width: 200px;
+    flex-shrink: 0;
+}
+.box-images img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/*Popular section styling */
+.popular-box{
+    /* display: grid; */
+    background-color: #e3e6e6;
+    /* background-size: cover; */
+    /* height: 285px; */
+    width: 100%;
+    margin-top: 0;
+    padding:30px 0;
+}
+.popular{
+    height: 285px;
+    width: 97%;
+    padding: 10px 20px 20px 20px;
+    margin: 30px 20px;
+    /* margin-top: 30px; */
+    border: none;
+    background-color: #FFFFFF;
+}
+.popular-head{
+    font-size: 22px;
+    color: #051111;
+    margin: 10px 0px 0px;
+}
+.popular-items{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 3px 0px;
+    margin: 0;  
+}
+.book-images{
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+    flex-shrink: 0;
+}
+.book-images img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+/*Footer*/
+footer{
+    margin-top: 0;
+}
+.footpanel-1{
+    background-color: #37475a;
+    color: #ffffff;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.footpanel-1:hover{
+    background-color:#888a8c;
+}
+.footpanel-2{
+    background-color: #222f3d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+ul a{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #dddddd;
+}
+ul p{
+    margin: 6px 0px 14px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footpanel-3{
+    background-color: #222f3d;
+    color: #ffffff;
+    /* border: 0.1px solid white; */
+    border: 1px solid #3a4553; 
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    background-image: url(amazon.png);
+    background-size: cover;
+    height: 50px;
+    width: 109px;
+}
+.select-items{
+    margin: 5px 0px 0px 70px;
+    padding: 0px 7.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+/*Language */
+.select_lang{
+    margin: 0px 8px 0px 0px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    color: #dddddd;
+    height: 35px;
+    width: 133px;
+    display: flex;
+    align-items: center;
+    border: 0.2px solid #777;
+    border-radius: 3px;
+}
+.lang-logo{
+    margin-right: 5px;
+}
+.select_lang p{
+    font-size: 14px;
+    padding: 0px 7px;
+    flex-grow: 1;
+    font-weight: 540;
+}
+.lang-arrows{
+    padding-left: 15px;
+    /* padding-right: 15px; */
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+/*Currency */
+.select_currency{
+    margin: 0px 8px 0px 0px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    color: #dddddd;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    border: 0.2px solid #777;
+    border-radius: 3px;
+}
+.curr-logo{
+    margin: 3px 0px 0px;
+    color: #ffffff;
+}
+.select_currency p{
+    font-size: 14px;
+    padding: 0px 7.8px;
+    flex-grow: 1;
+    color: #cccccc;
+    white-space: nowrap;
+    font-weight: 540;
+}
+/*Country */
+.select-country{
+    margin: 0px 4px 0px 0px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    color: #dddddd;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    border: 0.2px solid #777;
+    border-radius: 3px;
+}
+.country-logo{
+    margin: 3px 0px 0px;
+    color: #ffffff;
+}
+.select_country p{
+    font-size: 14px;
+    padding: 0px 7.8px;
+    flex-grow: 1;
+    color: #cccccc;
+    white-space: nowrap;
+    font-weight: 540;
+}
+
+.footpanel-4{
+    background-color: #131A22; 
+    color: #DDDDDD;
+    /* margin: 0px 0px 0px; */
+    padding: 30px 0px;
+    font-size: 12px;
+}
+.footer-links-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: minmax(50px, auto); 
+    row-gap: 15px; 
+    column-gap: 15px;    
+    padding: 0 10% 40px 10%;
+}
+.link-item{
+    padding: 5px;
+}
+.link-title{
+    font-size: 12px;
+    font-weight: bold;
+    color: #DDDDDD;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.link-desc{
+    font-size: 11px;
+    color: #999999; 
+    line-height: 1.2;
+}
+.link-title:hover{
+    text-decoration: underline;
+}
+
+.footer-legal-section{
+    text-align: center;
+    padding: 10px 0px 30px ;
+    font-size: 12px;
+}
+.legal-links{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.legal-links a{
+    text-decoration: none;
+    padding: 0px 7.2px;
+    /* margin: 0 10px; */
+    white-space: nowrap; 
+    color: #DDDDDD;
+}
+.copyright{
+    color: #DDDDDD;
+    padding: 0px 7.2px;
+}
+
+
+
+
+
+
+
+
+
